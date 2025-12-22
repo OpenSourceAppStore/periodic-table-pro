@@ -42,6 +42,15 @@
     @include shadow-border();
     // @include shadow-border(currentColor, 0.0625em);
   }
+
+  &:hover {
+    &::before { 
+      opacity: 0.12;
+    }
+    &::after {
+      opacity: 0.6;
+    }
+  }
 }
 
 .tl, .tr {
